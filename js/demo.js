@@ -48,17 +48,21 @@
     function runAnimation() {
         // Draw a straight line
         bsBackground.draw({
-            points: [0, height , width, height / 3],
+            points: [0, height , width, height / 2],
             color: 'gold',
             splashing: true,
-            frames: 10,
+            frames: 20,
             dripping: true,
+            inkAmount: 5
         });
 
         // Draw another straight line
         bsBackground.draw({
-            points: [width, height / 2, 0, height / 1.5 - 40],
-            color: 'green'
+            points: [width, height/1.5-20, 0, height / 1.5 - 40],
+            color: 'green',
+            inkAmount: 5,
+            dripping: true,
+            frames: 20,
         });
 
         // Draw a curve generated using 20 random points

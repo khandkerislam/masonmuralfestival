@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Pacifico|Amatic+SC|Barrio|Concert+One|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Pacifico|Amatic+SC|Barrio|Concert+One|Source+Sans+Pro|Sacramento');
 html, body {
   width: 100%;
   height: 100%;
 }
-
 body {
   text-align: center;
 }
@@ -12,7 +11,6 @@ body {
     width: 100%;  /* The width is the width of the web page */
 }
 canvas {
-  
   top: 50%;
   left: 50%;
   max-width: 100%;
@@ -21,7 +19,9 @@ canvas {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-
+span{
+    display: block;
+}
 canvas:nth-of-type(1), canvas:nth-of-type(3) {
   width: 100%;
   height: 100%;
@@ -87,7 +87,7 @@ button.hidden {
 }
 #nav{
   font-family: 'Amatic SC',serif;
-  font-size:20px;
+  font-size:50px;
 }
 .navbar-inner{
   background: transparent;
@@ -124,10 +124,8 @@ img{
   text-align: left;
   height:100vh;
   width:100vw;
-  z-index: 2;
-    
-
 }
+.
 @-webkit-keyframes rainbow {
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
@@ -141,6 +139,38 @@ img{
 .artists{
   height:100vh;
   width:100vw;
+}
+.details{
+  position:relative;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  top: -400px;
+  z-index: 1;
+  
+}
+.details h1{
+  font-family: 'Pacifico', cursive;
+  color: gold;
+}
+.details h2{
+  font-family: 'Amatic SC',serif;
+  color: white;
+}
+.flex-child{
+  flex: 1;
+}
+#time{
+  display: inline-block;
+  height: 50px;
+}
+#where{
+  display: inline-block;
+  height: 50px;
+}
+#park{
+  display: inline-block;
+  height: 50px;
 }
 .logo{
   width: 500px;
@@ -157,6 +187,7 @@ img{
 }
 .hero__title {
    -webkit-text-stroke: 5px black;
+  z-index: 3;
   height: 100vh;
   width: 100vw;
   text-transform: uppercase;
@@ -167,9 +198,8 @@ img{
   font-weight: 300;
   color: #000;
   background: #fff;
- 
   mix-blend-mode:     lighten;
-  font:               bolder 10vw 'Source Sans Pro', sans-serif;
+  font:               bolder 7vw 'Source Sans Pro', sans-serif;
   @include min($tablet) {
     margin-top: 1.25em;
     margin-bottom: 2.5em;

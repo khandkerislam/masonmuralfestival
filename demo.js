@@ -39,7 +39,7 @@
         color: 'white',
         width: 1000,
         height: 300
-    };
+    }
     bsPath = new Brushstroke(optionsPath);
 
 
@@ -57,8 +57,8 @@
 
         // Draw another straight line
         bsBackground.draw({
-            points: [width, height / 2, 0, height / 1.5 - 40],
-            color: 'green'
+            points: [width, height / 2, 0, height / 1.5],
+            color: 'green',
         });
 
         // Draw a curve generated using 20 random points
