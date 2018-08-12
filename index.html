@@ -2,10 +2,10 @@
   <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="khan.css">
+    <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <script src="https://unpkg.com/scrollreveal@4"></script>
   </head>
         <nav id="nav" class="navbar navbar-fixed-top">
             <div class="navbar-inner">
@@ -20,7 +20,6 @@
               </div>
                 <div class="collapse navbar-collapse">
                 <ul class = "nav navbar-nav pull-left">
-                  <li>September 7th</li>    
                 </ul>
                 <ul class="nav navbar-nav pull-right">
                   <li class="active"><a href="#landing" class="scroll">Home</a></li>
@@ -32,12 +31,11 @@
             </div>
           </nav>
     <body>
-
-          <div id= "landing" class = "landing">
+        <div id= "landing" class = "landing">
             <h1 class="hero__title">
                 <span>Contemporary</span><span>Mural Arts Festival</span> at Mason
             </h1>
- <canvas width="1255" height="659" style="position: absolute; visibility: visible;"></canvas>
+                <canvas width="1255" height="659" style="position: absolute; visibility: visible;"></canvas>
             <div class = "details">
                 <div id = "time" class = "flex-child">
                     <h1>When</h1>
@@ -53,9 +51,54 @@
                 </div>
             </div>
         </div>
+        <div class = "about">
+            <div class = "quote">
+              <div id = "The">"The</div>
+              <div id = "chief">chief </div>
+              <div id = "enemy">enemy </div><div id = "of">of </div>
+              <div id = "creativity">creativity </div>
+              <div id = "is">is </div>
+              <div id = "good">good </div>
+              <div id = "sense">sense"</div>
+              <div class = "author"> -Pablo Picasso </div>
+            </div>
+            <div id = "aboutText"><h1 id="aboutHeader">About Us</h1><p>A project spearheaded by students and members of the George Mason University community, The Contemporary Mural Arts Festival at Mason was started as an idea to enrich and add life to the current landscape of the GMU campus. Proposed and instigated by then freshman Fionnuala Fisk, and supported closely by the University’s Provisions Library and University Curator Donald Russell, The Contemporary Mural Arts Festival team has only grown since then. With more and more students of various backgrounds, fields of study, and class standings, the #MuralsAtMason team stands as a microcosm of what the project hopes to accomplish; bringing various community members together through the  nature of public art.</p>
+              <div id="map"></div>
+            </div>
+            <script>
+              ScrollReveal().reveal('#the', { delay: 1600 });
+              ScrollReveal().reveal('#chief', { delay: 3000 });
+              ScrollReveal().reveal('#enemy', { delay: 5000 });
+              ScrollReveal().reveal('#of', { delay: 800 });
+              ScrollReveal().reveal('#creativity', { delay: 1900 });
+              ScrollReveal().reveal('#is', { delay: 2000 });
+              ScrollReveal().reveal('#good', { delay: 3300 });
+              ScrollReveal().reveal('#sense', { delay: 4000 });
+              ScrollReveal().reveal('.author',{ delay: 6000});
+            </script>
+
+            <script>
+        // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var uluru = {lat: 38.831083, lng: -77.307122};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 20, center: uluru});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTAbkw25MStyT4EOG8Nta84GmWQcFxuRs&callback=initMap">
+            </script>
+        </div>
+        <div class = artists>
+          test
+        </div>
       <script>
             function animate(){
-                
+
             }
       </script>
       <script src='js/promise.min.js'></script>
