@@ -2,10 +2,12 @@
   <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="khan.css">
+    <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="path/to/smooth-scroll.polyfills.min.js"></script>
+
   </head>
         <nav id="nav" class="navbar navbar-fixed-top">
             <div class="navbar-inner">
@@ -22,15 +24,16 @@
                 <ul class = "nav navbar-nav pull-left">
                 </ul>
                 <ul class="nav navbar-nav pull-right">
-                  <li class="active"><a href="#landing" class="scroll">Home</a></li>
-                  <li id="portlink"><a href="#about">About</a></li>
-                  <li id="orglink"><a href="#artists">Artists</a></li>
+                  <li class="active"><a data-scroll href="#landing" class="scroll">Home</a></li>
+                  <li class="active"><a data-scroll href="#about" class="scroll" >About</a></li>
+                  <li class="active"><a data-scroll href="#artists" class="scroll">Artists</a></li>
                 </ul>
               </div><!--/.nav-collapse -->
             </div>
             </div>
           </nav>
     <body>
+
         <div id= "landing" class = "landing">
             <h1 class="hero__title">
                 <span>Contemporary</span><span>Mural Arts Festival</span> at Mason
@@ -47,11 +50,12 @@
                 </div>
                 <div id = "park" class = "flex-child">
                     <h1>Parking</h1>
-                    <h2>TBA - Uber Everywhere</h2>
+                    <h2>TBA</h2>
                 </div>
             </div>
         </div>
-        <div class = "about">
+
+        <div id= "about" class = "about">
             <div class = "quote">
               <div id = "The">"The</div>
               <div id = "chief">chief </div>
@@ -62,8 +66,9 @@
               <div id = "sense">sense"</div>
               <div class = "author"> -Pablo Picasso </div>
             </div>
-            <div id = "aboutText"><h1 id="aboutHeader">About Us</h1><p>A project spearheaded by students and members of the George Mason University community, The Contemporary Mural Arts Festival at Mason was started as an idea to enrich and add life to the current landscape of the GMU campus. Proposed and instigated by then freshman Fionnuala Fisk, and supported closely by the University’s Provisions Library and University Curator Donald Russell, The Contemporary Mural Arts Festival team has only grown since then. With more and more students of various backgrounds, fields of study, and class standings, the #MuralsAtMason team stands as a microcosm of what the project hopes to accomplish; bringing various community members together through the  nature of public art.</p>
-              <div id="map"></div>
+            <div id = "aboutText"><h1 id="aboutHeader">About Us</h1><p>A project spearheaded by students and members of the George Mason University community, The Contemporary Mural Arts Festival at Mason was started as an idea to enrich and add life to the current landscape of the GMU campus. Proposed and instigated by then freshman Fionnuala Fisk, and supported closely by the University’s Provisions Library and University Curator Donald Russell, The Contemporary Mural Arts Festival team has   only grown since then. With more and more students of various backgrounds, fields of study, and class standings, the #MuralsAtMason team stands as a microcosm of what the project hopes to accomplish; bringing various community members together through the  nature of public art.</p>
+              <hr>
+            <div id="map"></div>
             </div>
             <script>
               ScrollReveal().reveal('#the', { delay: 1600 });
@@ -93,18 +98,34 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTAbkw25MStyT4EOG8Nta84GmWQcFxuRs&callback=initMap">
             </script>
         </div>
-        <div class = artists>
-          test
+        <div id= "artists" class = "artists">
+          <h1 style="text-align:center">Artists</h1>
+          <div class = "work" id = "maricama">
+            <a href="https://www.maricama.com"><img src ="images/artists/maricama.jpg"></img></a>
+            <h1 class = "name">Maricama</h1>
+          </div>
+          <div class = "work" id = "reed">
+            <h1 class = "name">Reed<br>Griffith</h1>
+            <a href="https://www.reedgriffith.com"><img src ="images/artists/DF11.jpg"></img></a>
+          </div>
+          <div class = "work" id = "imani">
+            <a href="https://www.imaniniasr.com"><img src ="images/knockout/fifth.jpg"></img></a>
+            <h1 class = "name">Imani</h1>
+          </div>
+          <div class = "work" id = "ceepil">
+            <h1 class = "name">Ceepil</h1>
+            <a href="https://www.globalstreetart.com/cee.com"><img src ="images/knockout/second.jpg"></img></a>
+          </div>
         </div>
       <script>
             function animate(){
 
             }
       </script>
+      <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
       <script src='js/promise.min.js'></script>
       <script src='dist/brushstroke.js'></script>
 <!--      <script src='js/demo.js'></script>-->
-      <script src='js/index.js'></script>
 
   </body>
 </html>
