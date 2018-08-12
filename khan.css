@@ -57,7 +57,6 @@ canvas {
 .quote{
   color: white;
   background: url("images/paintbg.jpg") center;
-  background-color: pink;
   text-align: center;
   font-size: 2em;
   display:grid;
