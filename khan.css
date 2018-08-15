@@ -41,15 +41,14 @@ canvas {
   font-size: 18px;
   line-height: 1.58;
   letter-spacing: -.004em;
-  font-family: 'Amatic SC', serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .artists{
   height: 100vh;
   width: 100vw;
 }
 .artists h1{
-  text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montaga', serif;
 }
 .work img{
   height:75vh;
@@ -182,11 +181,11 @@ span{
 
 }
 .details h1{
-  font-family: 'Pacifico', cursive;
+  font-family: 'Montaga', serif;
   color: gold;
 }
 .details h2{
-  font-family: 'Amatic SC',serif;
+  font-family: 'Josefin Sans',sans-serif;
   color: white;
 }
 .flex-child{
