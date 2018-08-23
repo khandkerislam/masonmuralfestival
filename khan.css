@@ -9,30 +9,95 @@ html, body {
 body {
   scroll-behavior: [ auto | smooth ];
 }
-canvas {
-  top: 50%;
-  left: 50%;
-  max-width: 100%;
-  max-height: 100%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
 
-.landing{
-  top:-20px;
-  background: url("images/knockout/knockout.jpg") center;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: black;
-  font-family: 'Source Sans Pro', sans-serif;
+.page{
+
+  background: url();
   text-align: left;
   height:100vh;
   width:100vw;
 }
-.about{
+
+/* .hero__title {
+  -webkit-text-stroke: 5px black;
+  overflow: hidden;
+  z-index: 3;
+  width: 100vw;
+  height: 75vh;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 1.7;
+  font-weight: 300;
+  text-shadow:        0 0 9px white;
+  color: #000;
+  background-color: white;
+  mix-blend-mode:     lighten;
+  font:               bolder 8.5em 'Source Sans Pro', sans-serif;
+} */
+.hero__title{
+    -webkit-text-stroke: 5px;
+    background: url("images/knockout/donate.jpg") center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin:                         auto;
+    width: 100vw;
+    height: 75vh;
+    font-weight: 300;
+    text-shadow:        0 0 9px;
+    background-clip:                text;
+    -webkit-background-clip:        text;
+    color:                          transparent;
+    font:               bolder 8.5em 'Source Sans Pro', sans-serif;
+
+}
+span{
+    display: block;
+}
+.details{
+
+  height:25vh;
+  background-image:url("images/detailsbg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  z-index: 1;
+
+}
+.details h1{
+  font-family: 'Pacifico', cursive;
+  color: gold;
+}
+.details h2{
+  font-family: 'Amatic SC',serif;
+  color: white;
+}
+.flex-child{
+  flex: 1;
+}
+#time{
+  display: inline-block;
+  height: 50px;
+}
+#where{
+  display: inline-block;
+  height: 50px;
+}
+#park{
+  display: inline-block;
+  height: 50px;
+}
+/* .about{
   overflow: hidden;
   height:100vh;
   text-align: center;
@@ -41,24 +106,112 @@ canvas {
   font-size: 18px;
   line-height: 1.58;
   letter-spacing: -.004em;
+  font-family: 'Amatic SC', serif;
+} */
+.about{
+  width: 100vw;
+  height:100vh;
+}
+.about h1{
+  -webkit-text-stroke: 5px;
+  color:white;
+  background: url("images/knockout/knockout.jpg") center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin:                         auto;
+  width: 100vw;
+  height: 21vh;
+  font-weight: 300;
+
+  -webkit-background-clip:        text;
+  color:                          transparent;
+  text-shadow:        0 0 9px;
+  font:               bolder 8.5em 'Source Sans Pro', sans-serif;
+
+}
+#aboutText{
+  height:40vh;
+  width: 100vw;
   font-family: 'Josefin Sans', sans-serif;
+  padding: 30px;
+  font-size: 1.3em;
+  background-color: white;
+}
+#gallery{
+  background: url("images/bgabout.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:50vh;
+  padding: 30px;
+}
+#gallery h3{
+  -webkit-text-stroke: 2px;
+  font-family: 'Amatic SC', serif;
+  background-color: white;
+  border-radius: 25px;
+  word-break: break-all;
+  word-wrap: break-word;
+  width: 350px;
+}
+#aboutHeader{
+  font-family: 'Montaga', serif;
+  font-style: bolder;
 }
 .artists{
   height: 100vh;
   width: 100vw;
 }
+.reed h1{
+  grid-column: 0;
+  grid-row: 0;
+}
+.reed img{
+  grid-column: 1;
+  grid-row: 0;
+  width:40px;
+  height:40px;
+}
+.donate{
+  height: 100vh;
+  width: 100vw;
+}
 .artists h1{
-  font-family: 'Montaga', serif;
+  -webkit-text-stroke: 5px;
+  overflow: hidden;
+  z-index: 3;
+  background: url("images/knockout/knockout.jpg") center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip:                text;
+  -webkit-background-clip:        text;
+  color:                          transparent;
+  width: 100vw;
+  height: 25vh;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 1.7;
+  font-weight: 300;
+  font:               bolder 8.5em 'Source Sans Pro', sans-serif;
 }
 .work img{
   height:75vh;
-  width: 60vw;
+  width: 50vw;
 }
 .work h1{
-  font-family: 'Pacifico', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   color: white;
-  width: 40vw;
-  font-size: 4em;
+  width: 50vw;
+  font-size: 3em;
   margin: auto;
   text-align: center;
 }
@@ -72,26 +225,34 @@ canvas {
     transform: scale(1.05);
 }
 #maricama{
-  background-color: #73C38C;
+  background: url("images/knockout/knockout2.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #reed{
-  background-color: #27223C;
+  background: url("images/reedart.jpg");
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #imani{
-  background-color: #FDE620;
+  background: url("images/knockout/fifth.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #ceepil{
-  background: #A12594;
+  background: url("images/knockout/third.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#aboutText{
-  height:100%;
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 30px;
-}
-#aboutHeader{
-  font-family: 'Montaga', serif;
-  font-style: bolder;
-}
+
 .quote{
   font-family: 'Abril Fatface', cursive;
   overflow-x: hidden;
@@ -103,7 +264,7 @@ canvas {
   font-size: 2em;
   display:grid;
   grid-template-columns: repeat(auto-fill, 100px);
-  grid-template-rows: repeat(auto-fill, 90px);
+  grid-template-rows: repeat(auto-fill, 100px);
 }
 
 #the{
@@ -143,67 +304,159 @@ canvas {
   grid-row: 7 / 8;
   font-size: 20px;
 }
-.hero__title {
-   -webkit-text-stroke: 5px black;
-  z-index: 3;
-  width: 100vw;
-  height: 75vh;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: -0.5px;
-  line-height: 1.7;
-  font-weight: 300;
-  text-shadow:        0 0 9px white;
-  color: #000;
-  background-color: white;
-  mix-blend-mode:     lighten;
-  font:               bolder 9.4vw 'Source Sans Pro', sans-serif;
-}
-span{
-    display: block;
-}
 #casso{
     background-color: pink;
     font-family: 'Tangerine',cursive;
     font-size: 7em;
     padding:40px;
 }
-
-.details{
-  top: -10px;
-  height:25vh;
-  background: black;
+#donate h1{
+  -webkit-text-stroke: 5px;
+  overflow: hidden;
+  z-index: 3;
+  background: url("images/knockout/donate.jpg") center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip:                text;
+  -webkit-background-clip:        text;
+  color:                          transparent;
+  width: 100vw;
+  height: 21vh;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 1.7;
+  font-weight: 300;
+  font:               bolder 8.5em 'Source Sans Pro', sans-serif;
+}
+#donateimg{
+  background: url("images/don2.png") center;
+  background-attachment: fixed;
+  background-position:center;
+  background-repeat: no-repeat;
+  height:50vh;
+  width:100vw;
+}
+#donateText{
+  top:-10px;
+  height: 30vh;
+  font-family: 'Josefin Sans', sans-serif;
   position:relative;
   justify-content: center;
   text-align: center;
-  display: flex;
   z-index: 1;
+  padding-top: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 1em;
+  background-color: white;
+}
+
+#getInvolved{
+    background: url("images/about.jpg") center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
-.details h1{
-  font-family: 'Montaga', serif;
-  color: gold;
+#getInvolved h1{
+  -webkit-text-stroke: 5px;
+  overflow: hidden;
+  z-index: 3;
+  background: url("images/knockout/knockout2.png") center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip:                text;
+  -webkit-background-clip:        text;
+  color:                          transparent;
+  width: 100vw;
+  height: 25vh;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 1.7;
+  font-weight: 300;
+  font:               bolder 8.5em 'Source Sans Pro', sans-serif;
 }
-.details h2{
-  font-family: 'Josefin Sans',sans-serif;
-  color: white;
+#getText{
+  top:-10px;
+  height: 50vh;
+  width: 100vw;
+  font-family: 'Josefin Sans', sans-serif;
+  position:relative;
+  justify-content: center;
+  text-align: left;
+  z-index: 1;
+  background-color: white;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 1.0em;
+  opacity: 1.0;
 }
-.flex-child{
-  flex: 1;
+#getImage{
+  top:-10px;
+  background-image: url("images/about.jpg");
+  height:75vh;
+  width:50vw;
 }
-#time{
-  display: inline-block;
-  height: 50px;
-}
-#where{
-  display: inline-block;
-  height: 50px;
-}
-#park{
-  display: inline-block;
-  height: 50px;
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
 }
 #map {
   height: 40vh;  /* The height is 400 pixels */
+
+}
+@media screen and (max-width: 1024px) {
+  h1.hero__title{
+    font-size: 8.4em;
+  }
+  h1.flex-child{
+    font-size: 5.6em;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+  h1.hero__title{
+    font-size: 5.6em;
+    padding-top: 55px;
+  }
+  h1.flex-child{
+    font-size: 5.6em;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+
+  h1.hero__title{
+    font-size: 4.5em;
+    padding-top: 65px;
+  }
+  h1.flex-child{
+    font-size: 5.6em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1.hero__title{
+    padding-top: 100px;
+    font-size: 3.5em;
+  }
+  h1.flex-child{
+    font-size: 5.6em;
+  }
 
 }
