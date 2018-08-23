@@ -17,26 +17,9 @@ body {
   height:100vh;
   width:100vw;
 }
-
-/* .hero__title {
-  -webkit-text-stroke: 5px black;
-  overflow: hidden;
-  z-index: 3;
-  width: 100vw;
-  height: 75vh;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: -0.5px;
-  line-height: 1.7;
-  font-weight: 300;
-  text-shadow:        0 0 9px white;
-  color: #000;
-  background-color: white;
-  mix-blend-mode:     lighten;
-  font:               bolder 8.5em 'Source Sans Pro', sans-serif;
-} */
 .hero__title{
     -webkit-text-stroke: 5px;
+    -moz-text-stroke:    5px;
     background: url("images/knockout/donate.jpg") center;
     background-attachment: fixed;
     background-position: center;
@@ -52,6 +35,7 @@ body {
     text-shadow:        0 0 9px;
     background-clip:                text;
     -webkit-background-clip:        text;
+    -moz-background-clip:           text;
     color:                          transparent;
     font:               bolder 8.5em 'Source Sans Pro', sans-serif;
 
@@ -114,6 +98,7 @@ span{
 }
 .about h1{
   -webkit-text-stroke: 5px;
+  -moz-text-stroke: 5px;
   color:white;
   background: url("images/knockout/knockout.jpg") center;
   background-attachment: fixed;
@@ -129,6 +114,7 @@ span{
   font-weight: 300;
 
   -webkit-background-clip:        text;
+  -moz-background-clip:           text;
   color:                          transparent;
   text-shadow:        0 0 9px;
   font:               bolder 8.5em 'Source Sans Pro', sans-serif;
@@ -184,6 +170,7 @@ span{
 }
 .artists h1{
   -webkit-text-stroke: 5px;
+  -moz-text-stroke: 5px;
   overflow: hidden;
   z-index: 3;
   background: url("images/knockout/knockout.jpg") center;
@@ -193,6 +180,7 @@ span{
   background-size: cover;
   background-clip:                text;
   -webkit-background-clip:        text;
+  -moz-background-clip:           text;
   color:                          transparent;
   width: 100vw;
   height: 25vh;
@@ -253,65 +241,10 @@ span{
   background-size: cover;
 }
 
-.quote{
-  font-family: 'Abril Fatface', cursive;
-  overflow-x: hidden;
-  height: 100%;
-  color: white;
-  background: url("images/paintbg.jpg") center;
-  background-color: pink;
-  text-align: center;
-  font-size: 2em;
-  display:grid;
-  grid-template-columns: repeat(auto-fill, 100px);
-  grid-template-rows: repeat(auto-fill, 100px);
-}
 
-#the{
-  grid-column: 0 / 1;
-  grid-row: 3 / 4;
-}
-#chief{
-  grid-column: 2 / 3;
-  grid-row:3 / 4;
-}
-#enemy{
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
-}
-#of{
-  grid-column: 3 / 4;
-  grid-row: 4 / 5;
-}
-#creativity{
-  grid-column: 3 / 4;
-  grid-row: 5 / 6;
-}
-#is{
-  grid-column: 5 / 6;
-  grid-row: 5 / 6;
-}
-#good{
-  grid-column: 4 / 5;
-  grid-row: 6 / 7;
-}
-#sense{
-  grid-column: 5 / 6;
-  grid-row: 6 / 7;
-}
-.author{
-  grid-column: 4 / 5;
-  grid-row: 7 / 8;
-  font-size: 20px;
-}
-#casso{
-    background-color: pink;
-    font-family: 'Tangerine',cursive;
-    font-size: 7em;
-    padding:40px;
-}
 #donate h1{
   -webkit-text-stroke: 5px;
+  -moz-text-stroke: 5px;
   overflow: hidden;
   z-index: 3;
   background: url("images/knockout/donate.jpg") center;
@@ -321,6 +254,7 @@ span{
   background-size: cover;
   background-clip:                text;
   -webkit-background-clip:        text;
+  -moz-background-clip:           text;
   color:                          transparent;
   width: 100vw;
   height: 21vh;
@@ -364,6 +298,7 @@ span{
 }
 #getInvolved h1{
   -webkit-text-stroke: 5px;
+  -webkit-text-stroke: 5px;
   overflow: hidden;
   z-index: 3;
   background: url("images/knockout/knockout2.png") center;
@@ -373,6 +308,7 @@ span{
   background-size: cover;
   background-clip:                text;
   -webkit-background-clip:        text;
+  -moz-background-cli:            text;
   color:                          transparent;
   width: 100vw;
   height: 25vh;
