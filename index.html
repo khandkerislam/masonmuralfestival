@@ -2,9 +2,11 @@
   <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="khan.css">
+    <link rel="stylesheet" href="test.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script src="path/to/smooth-scroll.polyfills.min.js"></script>
 
@@ -22,11 +24,16 @@
               </div>
                 <div class="collapse navbar-collapse">
                 <ul class = "nav navbar-nav pull-left">
+
                 </ul>
                 <ul class="nav navbar-nav pull-right">
                   <li class="active"><a data-scroll href="#landing" class="scroll">Home</a></li>
                   <li class="active"><a data-scroll href="#about" class="scroll" >About</a></li>
+                  <li class="active"><a data-scroll href="#getInvolved" class="scroll">Join</a></li>
+                  <li class="active"><a data-scroll href="#donate" class="scroll">Donate</a></li>
                   <li class="active"><a data-scroll href="#artists" class="scroll">Artists</a></li>
+                  <a href="https://www.facebook.com/MuralsatMason/" class="fa fa-facebook"></a>
+                  <a href="https://www.instagram.com/MuralsatMason/" class="fa fa-instagram"></a>
                 </ul>
               </div><!--/.nav-collapse -->
             </div>
@@ -34,27 +41,27 @@
           </nav>
     <body>
 
-        <div id= "landing" class = "landing">
-            <h1 class="hero__title">
-                <span>Contemporary</span><span>Mural Arts Festival</span> at Mason
-            </h1>
-                <canvas width="1255" height="659" style="position: absolute; visibility: visible;"></canvas>
-            <div class = "details">
-                <div id = "time" class = "flex-child">
-                    <h1>When</h1>
-                    <h2>September 7th, 2018 | 3pm - 7pm</h2>
-                </div>
-                <div id = "where" class = "flex-child">
-                    <h1>Where</h1>
-                    <h2>Skyline Pavilion, George Mason</h2>
-                </div>
-                <div id = "park" class = "flex-child">
-                    <h1>Parking</h1>
-                    <h2>TBA</h2>
-                </div>
-            </div>
-        </div>
+        <div id= "landing" class = "page">
 
+            <h1 class="hero__title">
+                <span>Contemporary</span><span>Mural Arts Festival</span><span>at Mason</span>
+            </h1>
+                <div class = "details">
+                  <div id = "time" class = "flex-child">
+                      <h1>When</h1>
+                      <h2>September 7th, 2018 | 3pm - 7pm</h2>
+                  </div>
+                  <div id = "where" class = "flex-child">
+                      <h1>Where</h1>
+                      <h2>Skyline Pavilion, George Mason</h2>
+                  </div>
+                  <div id = "park" class = "flex-child">
+                      <h1>Parking</h1>
+                      <h2>TBA</h2>
+                  </div>
+              </div>
+        </div>
+<!--
         <div id= "about" class = "about">
             <div class = "quote">
               <div id = "The">"The</div>
@@ -97,6 +104,59 @@
             <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTAbkw25MStyT4EOG8Nta84GmWQcFxuRs&callback=initMap">
             </script>
+        </div> -->
+        <div id = "about" class = "about">
+          <h1 style="text-align:center">About Us</h1>
+          <div id = "gallery">
+            <div id = "aboutImg"><img src =""></img></div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 style="text-align:center">"The Chief Enemy of Creativity is Good Sense"<br>"-Picasso"</h3>
+          </div>
+          <div id = "aboutText">
+            <p>A project spearheaded by students and members of the George Mason University community, The Contemporary Mural Arts Festival at Mason was started as an idea to enrich and add life to the current landscape of the GMU campus. Proposed and instigated by then freshman Fionnuala Fisk, and supported closely by the University’s Provisions Library and University Curator Donald Russell, The Contemporary Mural Arts Festival team has   only grown since then. With more and more students of various backgrounds, fields of study, and class standings, the #MuralsAtMason team stands as a microcosm of what the project hopes to accomplish; bringing various community members together through the  nature of public art.</p>
+            <hr>
+          </div>
+        </div>
+        <div id = "getInvolved" class = "page">
+            <h1>Get Involved</h1>
+            <div id = "getText">
+              <p>There is much work to be done before the murals make it to the walls of GMU. Behind the scenes, we have set up a club called the Mural Brigade which you can find and join <a href = "https://getconnected.gmu.edu/organization/muralbrigade">here</a></p>
+              <p>The Mural Brigade aims to keep everyone on the team organized as we move forward applying for grants, creating and implementing marketing plans, collecting monetary support, and turning the dream of a fresh, new campus into a reality.
+                As part of the Mason Family, we would like to ask if you would support this project and be a part of major improvements for the university and the community as a whole.</p>
+              <p> Made up of students and faculty of various backgrounds, we currently have meetings 4 days a week with a “come as you please” system.</p>
+              <p>
+                Can’t make it for the whole meeting? No problem
+              </p>
+              <p>
+                Need to leave early for class? Go ahead.
+              </p>
+              <p>
+                We understand that students have busy schedules but by working together, we will be able to accomplish great things as we come closer to the completion of the project!
+              </p>
+            </div>
+            <script>
+                ScrollReveal().reveal('p',{ delay: 500});
+            </script>
+        </div>
+        <div id = "donate" class = "page">
+            <h1>Donate</h1>
+            <div id = "donateimg"></div>
+            <div id = "donateText">
+              <p>Murals are an amazing form of art that not only enrich their surroundings with vibrant color and imagery,
+                but also bring art to the public sphere for the community to enjoy, reflect on, and interperate together.
+              </p>
+              <p>The average mural costs roughly $21 per square foot with many other factors affecting the final price.  We’ve estimated that each of the #MuralsAtMason will total to around $4,000 and as such, we look to YOU for support.
+                As part of the Mason Family, we would like to ask if you would support this project and be a part of major improvements for the university and the community as a whole.
+              </p>
+              <br>
+              <a href="http://www.networkforgood.org/donation/MakeDonation.aspx?ORGID2=202030054&amp;vlrStratCode=NY6XEY9P9%2bmGoQ0g3gSArGilK4H7%2fak4uk6BzvnpYkyW84PRzs9Ah66mvHTa%2f%2bU8" class="button">SUPPORT NOW</a>
+            </div>
+            <script>
+                ScrollReveal().reveal('p',{ delay: 500});
+            </script>
         </div>
         <div id= "artists" class = "artists">
           <h1 style="text-align:center">Artists</h1>
@@ -106,15 +166,15 @@
           </div>
           <div class = "work" id = "reed">
             <h1 class = "name">Reed<br>Griffith</h1>
-            <a href="https://www.reedgriffith.com"><img src ="images/artists/DF11.jpg"></img></a>
+            <a href="https://www.reedgriffith.com"><img src ="images/artists/griffith.jpg"></img></a>
           </div>
           <div class = "work" id = "imani">
-            <a href="https://www.imaniniasr.com"><img src ="images/knockout/fifth.JPG"></img></a>
-            <h1 class = "name">Imani</h1>
+            <a href="https://www.imaniniasr.com"><img src ="images/artists/imani.png"></img></a>
+            <h1 class = "name">Imani<br>Shanklin<br>Roberts</h1>
           </div>
           <div class = "work" id = "ceepil">
-            <h1 class = "name">Ceepil</h1>
-            <a href="https://www.globalstreetart.com/cee.com"><img src ="images/knockout/second.jpg"></img></a>
+            <h1 class = "name">CEEPIL</h1>
+            <a href="https://www.globalstreetart.com/cee.com"><img src ="images/artists/ceepil.png"></img></a>
           </div>
         </div>
       <script>
@@ -125,7 +185,10 @@
       <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
       <script src='js/promise.min.js'></script>
       <script src='dist/brushstroke.js'></script>
-<!--      <script src='js/demo.js'></script>-->
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <!-- <script src='js/demo.js'></script>-->
 
   </body>
 </html>
