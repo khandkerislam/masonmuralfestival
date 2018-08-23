@@ -18,8 +18,8 @@ body {
   width:100vw;
 }
 .hero__title{
-    -webkit-text-stroke: 5px;
-    -moz-text-stroke:    5px;
+    text-stroke: 5px;
+    text-stroke:    5px;
     background: url("images/knockout/donate.jpg") center;
     background-attachment: fixed;
     background-position: center;
@@ -34,8 +34,6 @@ body {
     font-weight: 300;
     text-shadow:        0 0 9px;
     background-clip:                text;
-    -webkit-background-clip:        text;
-    -moz-background-clip:           text;
     color:                          transparent;
     font:               bolder 8.5em 'Source Sans Pro', sans-serif;
 
