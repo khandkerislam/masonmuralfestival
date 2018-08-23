@@ -26,7 +26,7 @@
         width: width,
         height: height
     };
-    bsBackground = new Brushstroke(optionsBackground);
+    bsBackground = new Brushstroke(document.getElementById('canvasLand'));
 
 
     // Options for text (SVG paths)

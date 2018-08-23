@@ -1,0 +1,99 @@
+button {
+  position: relative;
+  display: inline-block;
+  top: 10%;
+  color: #fff;
+  background-color: #bc3a3a;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 2px;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0 10px 5px rgba(188, 58, 58, 0.5);
+          box-shadow: 0 0 10px 5px rgba(188, 58, 58, 0.5);
+}
+
+button:hover {
+  background-color: #c74949;
+}
+
+button.hidden {
+  -webkit-transform: translateY(-150%);
+      -ms-transform: translateY(-150%);
+          transform: translateY(-150%);
+  opacity: 0;
+  pointer-events: none;
+}
+.btn{
+  font-family: :'Amatic SC', serif;
+}
+#aboutMe{
+  font-family: 'Amatic SC', serif;
+  font-size: 3rem;
+  background-color: white;
+  width:55vw;
+  height:50vh;
+  text-align:center;
+}
+#hold{
+  padding-top: 50px;
+}
+.portfolio{
+  margin-top: -20px;
+  font-family:'Amatic SC',serif;
+  height:100vh;
+  width:100vw;
+  text-align: center;
+  background-color: white;
+}
+.organization{
+  margin-top: -20px;
+  font-family:'Amatic SC',serif;
+  height:100vh;
+  width:100vw;
+  text-align: center;
+  background-color: white;
+}
+#nav{
+  font-family: 'Amatic SC',serif;
+  font-size:50px;
+}
+.navbar-inner{
+  background: transparent;
+}
+.work{
+  padding-top: 25px;
+  text-align: center;
+  font-family: 'Permanent Marker',serif;
+}
+#Resume{
+  padding-top: 100px;
+  font-family:'Pacifico',serif;
+  font-size: 64px;
+  text-align: center;
+  color: white;
+}
+img{
+    max-width:100%;
+    max-height:100%;
+}
+.about{
+  height:100vh;
+  width: 100vw;
+}
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+.artists{
+  height:100vh;
+  width:100vw;
+}
+.logo{
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+  border-style:solid;
+}

@@ -1,0 +1,65 @@
+              <nav id="nav" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+              <div class="container">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+              </div>
+                <div class="collapse navbar-collapse">
+                <ul class = "nav navbar-nav pull-left">
+                  <li>September 7th</li>    
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                  <li class="active"><a href="#landing" class="scroll">Home</a></li>
+                  <li id="portlink"><a href="#about">About</a></li>
+                  <li id="orglink"><a href="#artists">Artists</a></li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+            </div>
+          </nav>
+         <div id ="about" class = "about">
+              <h1>About Us</h1>
+              <p>
+                  A project spearheaded by students and members of the George Mason University community, The Contemporary Mural Arts Festival at Mason was started as an idea to enrich and add life to the current landscape of the GMU campus. Proposed and instigated by then freshman Fionnuala Fisk, and supported closely by the University’s Provisions Library and University Curator Donald Russell, The Contemporary Mural Arts Festival team has only grown since then. With more and more students of various backgrounds, fields of study, and class standings, the #MuralsAtMason team stands as a microcosm of what the project hopes to accomplish; bringing various community members together through the cohesive nature of public art.
+              </p>
+              <div id="map"></div>
+          </div>
+          <div id ="artists" class = "artists">
+            <h1>Our Artists</h1>
+            <div id="hold" class ="container">
+               <div class="row">
+                   <div class="col-sm-4">
+                     <h1>MARICAMA</h1>
+                     <div class="faded thumb">
+                       <a href="http://www.maricama.com/" target="_blank">
+                         <img src="images/maricama.jpg" class="img-responsive" alt="">
+                       </a>
+
+                     </div>
+                   </div>
+                 <div class="col-sm-4">
+                   <h1>REED GRIFFITH</h1>
+                   <div id="wiki"class="faded thumb">
+                     <a href="http://www.reedgriffith.com/" target="_blank">
+                       <img src="images/claiborne.jpg" class="img-responsive" alt="">
+                       <div class = "hover-opaque">
+                       </div>
+                     </a>
+                   </div>
+                 </div>
+                 <div class="col-sm-4">
+                   <h1>IMANI SHANKLIN ROBERTS</h1>
+                   <div class="faded thumb">
+                     <a href="https://www.imaniniasr.com/" target="_blank">
+                       <img src="images/roberts.jpg" class="img-responsive" alt="">
+                     </a>
+                   </div>
+                 </div>
+               </div>
+            </div>
+          </div>
