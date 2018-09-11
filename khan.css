@@ -363,13 +363,23 @@ span{
 
 }
 
+@media screen and (max-width: 1024px) {
+  h1.hero__title{
+    font-size: 8.4em;
+  }
+  h1.flex-child{
+    font-size: 4em;
+  }
+
+}
+
 @media screen and (max-width: 950px) {
   h1.hero__title{
     font-size: 5.6em;
     padding-top: 55px;
   }
   h1.flex-child{
-    font-size: 5.6em;
+    font-size: 4em;
   }
 }
 
@@ -381,7 +391,7 @@ span{
     padding-top: 65px;
   }
   h1.flex-child{
-    font-size: 5.6em;
+    font-size: 4em;
   }
 }
 
@@ -390,8 +400,61 @@ span{
     padding-top: 100px;
     font-size: 3.5em;
   }
-  h1.flex-child{
-    font-size: 5.6em;
+  .about h1{
+    padding: 50px;
+    font-size: 3.5em;
   }
-
+  .details h1{
+    font-size: 2.5em;
+  }
+  .details h2{
+    font-size: 1.5em;
+  }
+  #aboutText{
+    font-size: .7em;
+  }
+  #getInvolved h1{
+    padding: 40px;
+    font-size: 3.5em;
+  }
+  #getText p{
+    font-size: .55em;
+  }
+  #donate h1{
+    padding-top: 35px;
+    font-size: 3.5em;
+  }
+  #donateText{
+    font-size: .60em;
+  }
+  .button{
+    font-size: 6px;
+  }
+  #artists h1{
+    padding: 50px;
+    font-size: 3.5em;
+  }
+  .work img{
+    height: 25vh;
+  }
+  #maricama h1{
+    padding-top: 75px;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+  }
+  #reed h1{
+    padding-top: 75px;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+  }
+  #imani h1{
+    padding-top: 75px;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+  }
+  #ceepil h1{
+    padding-top: 75px;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+  }
 }
